@@ -6,8 +6,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 542px;
-    width: 1920px;
+    min-height: 542px;
+    width: 100%;
     margin-top: 0;
 
     &__content 
@@ -28,31 +28,32 @@
 
     &__nav 
         width: 100%;
-        display: block;
     
     &__menu 
-        width: 100%;
-        height: 100%;
+       
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 18px;
         line-height: 22px;
         padding-right: 15px;
 
-        li 
+        &--list
+            height: 100%;
             color: #5B5B5B;
             padding-left: 30px;
             position: relative;
-            &::before 
-                position: absolute;
-                content: '';
-                height: 73px;
-                width: 1px;
-                left: 0;
-                top: -24px;
-                background-color: #D5D5D5;
+            border-left: 1px solid #d5d5d5;
+            // &::before 
+            //     position: absolute;
+            //     content: '';
+            //     height: 74px;
+            //     width: 1px;
+            //     left: 0;
+            //     top: -22px;
+            //     background-color: #D5D5D5;
+
             
         &--phone,
         &--btn 

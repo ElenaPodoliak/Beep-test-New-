@@ -1,30 +1,31 @@
-.q-header(style="background-image: url(images/header_bg.jpg);")
+.q-header(style="background-image: url(img/header_bg.jpg);")
     .q-container
         .q-header__wrapper
             .q-header__content
                 .q-header__logo
                     a.q-header__logo--link(href="#")
-                        img.q-header__logo--img(src="images/logo.png" alt="logo-beep")
+                        img.q-header__logo--img(src="img/logo.png" alt="logo-beep")
                   
                 nav.q-header__nav
                     ul.q-header__menu
-                        li.q-header__menu--all
-                            a(href="#") Вся спецтехника
+                        li.q-header__menu--all.q-header__menu--list
+                            a(href="#").q-header__menu--link Вся спецтехника
                        
-                        li.q-header__menu--order
-                        a(href="#") Заказать технику
-                        li.q-header__menu--phone
-                            img(src="images/icon_phone.svg" alt="")
-                            a(href="tel: 88004381715") 8 800 
-                            span 438 17 15
-                        li.q-header__menu--search
-                        a(href="#")
-                        img(src="images/icon_search.svg" alt="")
-                        li.q-header__menu--language
+                        li.q-header__menu--order.q-header__menu--list
+                            a.q-header__menu--link(href="#") Заказать технику
+                        li.q-header__menu--phone.q-header__menu--list
+                            img(src="img/icon_phone.svg" alt="")
+                            a.q-header__menu--link(href="tel: 88004381715") 8 800 
+                                span 438 17 15
+                        li.q-header__menu--search.q-header__menu--list
+                            a(href="#")
+                                img(src="img/icon_search.svg" alt="")
+                        li.q-header__menu--language.q-header__menu--list
                             select.q-header__menu--language(name="select" id="")
                                 option(selected) ru
                                 option ua
                                 option en
-                        li.q-header__menu--btn
-                            a(href="#") войти
-                                img(src="images/icon_user.svg" alt="") 
+                        li.q-header__menu--btn.q-header__menu--list
+                            a(href="#") 
+                                img(src="img/icon_user.svg" alt="") 
+                                |войти
