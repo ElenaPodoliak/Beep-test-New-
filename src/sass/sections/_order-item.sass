@@ -1,7 +1,7 @@
 .q-order-item
     background-color: #4C8567
     position: relative
-
+        
     // &__inner
     //     position: absolute
     //     top: 100px
@@ -20,35 +20,52 @@
  
     &__main-box
         display: flex
+        align-items: flex-start
 
     &__left-part
+        max-width: 602px
         padding-right: 38px
-        &__map
-            height: 265px
+
+    &__slider
+        padding-bottom: 27px
+        &--item
+            height: 390px
+        &--mini
+            max-width: 120px
+            height: 120px
+
+    &__map
+        &--text
+            display: block
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 13px;
+            padding-bottom: 18px
+
     &__right-part
         display: flex
         justify-content: space-between
         flex-wrap: wrap
     &__title
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 29px;
+        font-weight: bold
+        font-size: 24px
+        line-height: 29px
         padding-bottom: 35px
 
     &__info-box
         padding-bottom: 30px
 
         &--subtitle
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 13px;
-            padding-bottom: 8px;
+            font-weight: bold
+            font-size: 14px
+            line-height: 13px
+            padding-bottom: 8px
         &--text
-            font-size: 14px;
-            line-height: 150%;
+            font-size: 14px
+            line-height: 150%
         &--list
-            font-size: 14px;
-            line-height: 197.5%;
+            font-size: 14px
+            line-height: 197.5%
 
     &__order-form
         position: relative
@@ -62,40 +79,42 @@
 
         &--price
             display: flex
-            flex-wrap: wrap
+            align-items: flex-end
             justify-content: space-between
             width: 100%
             padding-bottom: 9px
             border-bottom: 1px solid #DCDCDC
-        
+        &--payment-day
+            font-weight: bold
+            font-size: 24px
+            color: #4C8567
+        &--payment-hour
+            font-weight: bold
+            color: #777777
+        &--payment-day,
+        &--payment-hour
+            span 
+                font-size: 14px
+                font-weight: normal
         &--form
             padding-bottom: 19px
             span
                 display: block
-                font-size: 9px;
-                line-height: 11px;
+                font-size: 9px
+                line-height: 11px
                 padding-top: 18px
                 padding-bottom: 17px
             input
-                max-width: 305px;
-                padding-left: 17px;
-                width: 100%;
-                height: 52px;
-                font-size: 12px;
-                color: #4d4949;
-                background-color: #fafafa;
-                border: 1px solid #dcdcdc;
+                max-width: 305px
+                padding-left: 17px
+                width: 100%
+                height: 52px
+                font-size: 12px
+                color: #4d4949
+                background-color: #fafafa
+                border: 1px solid #dcdcdc
         &--btn
             background-color: #F04141
             padding: 15px 40px
             margin-left: auto
             color: #fff
-
-
-                
-
-.swiper-slide
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 564px;
