@@ -11,31 +11,31 @@
   <!-- WRITE CODE HERE ===>-->
   <!-- START SECTION HEADER ===>-->
   <body>
-    <div class="q-header" style="background-image: url(img/header_bg.jpg);">
+    <header class="q-header" style="background-image: url(img/header_bg.jpg);">
       <div class="q-container">
         <div class="q-header__wrapper">
           <div class="q-header__content">
             <div class="q-header__logo"><a class="q-header__logo--link" href="#"><img class="q-header__logo--img" src="img/logo.png" alt="logo-beep"/></a></div>
             <nav class="q-header__nav">
               <ul class="q-header__menu">
-                <li class="q-header__menu--all q-header__menu--list"><a class="q-header__menu--link" href="#">Вся спецтехника</a></li>
-                <li class="q-header__menu--order q-header__menu--list"><a class="q-header__menu--link" href="#">Заказать технику</a></li>
-                <li class="q-header__menu--phone q-header__menu--list"><img src="img/icon_phone.svg" alt=""/><a class="q-header__menu--link" href="tel: 88004381715">8 800 <span>438 17 15</span></a></li>
-                <li class="q-header__menu--search q-header__menu--list"><a href="#"><img src="img/icon_search.svg" alt=""/></a></li>
-                <li class="q-header__menu--language q-header__menu--list">
+                <li class="q-header__menu--list q-menu--all"><a class="q-header__menu--link" href="#">Вся спецтехника</a></li>
+                <li class="q-header__menu--list q-header__menu--order"><a class="q-header__menu--link" href="#">Заказать технику</a></li>
+                <li class="q-header__menu--list q-header__menu--phone"><img src="img/icon_phone.svg" alt=""/><a class="q-header__menu--link" href="tel: 88004381715">8 800 <span>438 17 15</span></a></li>
+                <li class="q-header__menu--item q-header__menu--search"><a href="#"><img src="img/icon_search.svg" alt=""/></a></li>
+                <li class="q-header__menu--item q-header__menu--language">
                   <select class="q-header__menu--language" name="select" id="">
                     <option selected="selected">ru</option>
                     <option>ua</option>
                     <option>en</option>
                   </select>
                 </li>
-                <li class="q-header__menu--btn q-header__menu--list"><a href="#"> <img src="img/icon_user.svg" alt=""/>войти</a></li>
+                <li class="q-header__menu--item q-header__menu--btn"><a href="#"> <img src="img/icon_user.svg" alt=""/>войти</a></li>
               </ul>
             </nav>
           </div>
         </div>
       </div>
-    </div>
+    </header>
     <main></main>
     <div class="q-order-item">
       <div class="q-container">
@@ -44,21 +44,23 @@
           <div class="q-order-item__wrapper">
             <div class="q-order-item__content">
               <div class="q-order-item__header">
-                <div class="q-order-item__tabs"></div><span class="q-order-item__update-time">Обновлено 7 апреля 2020, 08:48.</span>
+                <div class="q-order-item__tabs j-order-item__tabs">
+                  <div class="j-order-item__tab-items"><span class="q-order-item__tabs--tab j-tab" data-id="1">Фото</span><span class="q-order-item__tabs--tab j-tab" data-id="2">Видео</span></div>
+                </div><span class="q-order-item__update-time">Обновлено 7 апреля 2020, 08:48.</span>
                 <button class="q-order-item__favourite"><svg (width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg")>
 <path d="M7.05464 0.972639C7.24021 0.609015 7.75979 0.609014 7.94536 0.972641L9.37145 3.76707C9.5894 4.19415 9.99839 4.4913 10.4719 4.56661L13.5703 5.05938C13.9734 5.1235 14.134 5.61764 13.8455 5.9065L11.6285 8.12631C11.2897 8.46557 11.1335 8.94637 11.2082 9.42L11.697 12.519C11.7606 12.9222 11.3402 13.2276 10.9764 13.0425L8.18013 11.62C7.75277 11.4026 7.24723 11.4026 6.81987 11.62L4.02361 13.0425C3.65975 13.2276 3.23941 12.9222 3.30301 12.519L3.79181 9.41999C3.86651 8.94637 3.71029 8.46557 3.37146 8.12631L1.15449 5.90649C0.866005 5.61764 1.02656 5.1235 1.42974 5.05937L4.52808 4.56661C5.00161 4.4913 5.4106 4.19415 5.62855 3.76707L7.05464 0.972639Z" stroke="#4C8567"/>
 </svg><span class="q-order-item__favourite--text">В избранное</span>
                 </button>
               </div>
               <div class="q-order-item__main-box">
-                <div class="q-order-item__left-part">
-                  <div class="q-order-item__slider">
+                <div class="q-order-item__tabs j-order-item__tabs">
+                  <div class="q-order-item__slider j-order-item__tab-item" id="1">
                     <div class="q-order-item__slider--inner j-order-item__slider--inner"><img class="q-order-item__slider--item" src="img/slide_1.jpg"/><img class="q-order-item__slider--item" src="img/slide_1.jpg"/><img class="q-order-item__slider--item" src="img/slide_1.jpg"/><img class="q-order-item__slider--item" src="img/slide_1.jpg"/></div>
                     <div class="q-order-item__slider--nav j-order-item__slider--nav"><img class="q-order-item__slider--mini" src="img/slide_1.jpg"/><img class="q-order-item__slider--mini" src="img/slide_1.jpg"/><img class="q-order-item__slider--mini" src="img/slide_1.jpg"/><img class="q-order-item__slider--mini" src="img/slide_1.jpg"/></div>
                   </div>
-                  <div class="q-order-item__map"><span class="q-order-item__map--text">Карта базирования</span><img class="q-order-item__map--img" src="img/map.jpg" alt="map"/></div>
+                  <div class="q-order-item__video q-order-item__tab-item" id="2"></div>
                 </div>
-                <div class="q-order-item__right-part"><span class="q-order-item__title">Аренда автокрана LIEBHERR LTM 1100, Одесса, ул. Паустовского, 33.</span>
+                <div class="q-order-item__content-box"><span class="q-order-item__title">Аренда автокрана LIEBHERR LTM 1100, Одесса, ул. Паустовского, 33.</span>
                   <div class="q-order-item__info-box">
                     <div class="q-order-item__info-box--subtitle">Описание</div>
                     <p class="q-order-item__info-box--text">Автокран LIEBHERR LTM 1100. Надежная техника для решения Вашей задачи. Место базирования - поселок Котовского. Возможны различные формы договорных отношений и оплаты, плательщик НДС. Профессиональные операторы выполнят заказ любой сложности.</p>
@@ -74,6 +76,7 @@
                       <li>Грузоподъемность - 100 тонн</li>
                       <li>Вес - 60000 кг</li>
                     </ul>
+                    <button class="q-order-item__button">Поделиться</button>
                   </div>
                   <div class="q-order-item__order-form">
                     <div class="q-order-item__order-form--price"><span class="q-order-item__order-form--payment-day">6500<span>грн. / смена</span></span><span class="q-order-item__order-form--payment-hour">100<span>грн. / день</span></span></div>
@@ -84,6 +87,7 @@
                     <button class="q-order-item__order-form--btn">Заказать</button>
                   </div>
                 </div>
+                <div class="q-order-item__map"><span class="q-order-item__map--text">Карта базирования</span><img class="q-order-item__map--img" src="img/map.jpg" alt="map"/></div>
               </div>
             </div>
           </div>

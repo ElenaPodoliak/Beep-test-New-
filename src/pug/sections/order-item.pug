@@ -6,7 +6,11 @@
             .q-order-item__wrapper
                 .q-order-item__content
                     .q-order-item__header
-                        .q-order-item__tabs
+                        .q-order-item__tabs.j-order-item__tabs
+                            .j-order-item__tab-items
+                                span.q-order-item__tabs--tab.j-tab(data-id="1") Фото
+                                span.q-order-item__tabs--tab.j-tab(data-id="2") Видео
+                        
                         span.q-order-item__update-time Обновлено 7 апреля 2020, 08:48.
                         button.q-order-item__favourite
                             <svg (width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg")>
@@ -15,26 +19,21 @@
                             span.q-order-item__favourite--text В избранное
                 
                     .q-order-item__main-box
-                        .q-order-item__left-part
-                            .q-order-item__slider
+                        .q-order-item__tabs.j-order-item__tabs
+                            .q-order-item__slider.j-order-item__tab-item#1
                                 .q-order-item__slider--inner.j-order-item__slider--inner
                                     img.q-order-item__slider--item(src="img/slide_1.jpg")
                                     img.q-order-item__slider--item(src="img/slide_1.jpg")
                                     img.q-order-item__slider--item(src="img/slide_1.jpg")
-                                    img.q-order-item__slider--item(src="img/slide_1.jpg")
-                                   
+                                    img.q-order-item__slider--item(src="img/slide_1.jpg")   
                                 .q-order-item__slider--nav.j-order-item__slider--nav
                                     img.q-order-item__slider--mini(src="img/slide_1.jpg")
                                     img.q-order-item__slider--mini(src="img/slide_1.jpg")
                                     img.q-order-item__slider--mini(src="img/slide_1.jpg")
                                     img.q-order-item__slider--mini(src="img/slide_1.jpg")
+                            .q-order-item__video.q-order-item__tab-item#2
 
-                            .q-order-item__map
-                                span.q-order-item__map--text Карта базирования
-                                img.q-order-item__map--img(src="img/map.jpg" alt="map")
-                                //- iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2741.8052626679164!2d30.807453415955504!3d46.59108697913055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c624ca9c25d7b9%3A0xf4ebf60c8fb7aadd!2z0YPQuy4g0J_QsNGD0YHRgtC-0LLRgdC60L7Qs9C-LCAzMywg0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1588100545946!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0")
-
-                        .q-order-item__right-part
+                        .q-order-item__content-box
                             span.q-order-item__title Аренда автокрана LIEBHERR LTM 1100, Одесса, ул. Паустовского, 33.
                             .q-order-item__info-box
                                 .q-order-item__info-box--subtitle Описание
@@ -49,7 +48,8 @@
                                     li Гусек - 10,8 метра + 19 метров
                                     li Грузоподъемность - 100 тонн
                                     li Вес - 60000 кг
-                                    
+                                button.q-order-item__button Поделиться
+
                             .q-order-item__order-form
                                 .q-order-item__order-form--price
                                     span.q-order-item__order-form--payment-day 6500
@@ -61,3 +61,10 @@
                                     input(type="text" placeholder="Имя")
                                     input(type="text" placeholder="Ваш телефон")
                                 button.q-order-item__order-form--btn Заказать
+
+                        .q-order-item__map
+                            span.q-order-item__map--text Карта базирования
+                            img.q-order-item__map--img(src="img/map.jpg" alt="map")
+                               
+
+                            

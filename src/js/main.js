@@ -15,9 +15,21 @@ $(function () {
       asNavFor: ".j-order-item__slider--inner",
       dots: false,
       arrows: false,
+      variableWidth: true,
       focusOnSelect: true
     });
+
+    $('.j-order-item__tabs .j-tab').on('click', function(event) {
+      var id = $(this).attr('data-id');
+        $('.j-order-item__tabs').find('.j-order-item__tab-item').removeClass('active-tab').hide();
+        $('.j-order-item__tabs .j-order-item__tab-items').find('j-tab').removeClass('active');
+        $(this).addClass('active');
+        $('#'+id).addClass('active-tab').fadeIn();
+        return false;
+      });
+
   });
+
 
   // $(".header__select").select2();
 
