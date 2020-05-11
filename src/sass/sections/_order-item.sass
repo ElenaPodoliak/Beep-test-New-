@@ -1,13 +1,37 @@
 .q-order-item
-    background-color: #4C8567
-    position: relative
-        
-    // &__inner
-    //     position: absolute
-    //     top: 100px
+    margin-top: -366px
+    
+    &__main-title 
+        font-weight: 800
+        font-size: 36px
+        line-height: 44px
+        text-transform: uppercase
+        color: #FFFFFF
+        text-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25)
+        padding-bottom: 25px
+
+    .q-breadcrumbs
+        padding-bottom: 41px
+        &__list
+            color: #fff
+            line-height: 17px
+            &--item 
+                position: relative
+                display: inline-block
+
+                & + li
+                    padding-left: 15px
+
+                & + li::before 
+                    content: '>'
+                    position: absolute
+                    left: 3px
+                
 
     &__wrapper
         background-color: #fff
+        margin-bottom: 127px
+        
 
     &__content
         padding: 32px 29px 30px
@@ -17,6 +41,24 @@
         align-items: center
         justify-content: space-between
         padding-bottom: 32px
+
+    &__favourite
+        svg
+            min-width: 15px
+            &:hover
+                fill: #4C8567
+        &--btn
+            max-width: 300px
+            color: #4C8567
+            background-color: #fff
+            border: 1px solid #4C8567
+            border-radius: 3px
+            padding: 12px 10px
+            display: flex
+            align-items: center
+
+        &--text
+            padding-left: 8px
     &__tabs
         &--tab
             font-weight: 500
@@ -25,20 +67,24 @@
             color: #4C8567
             border: 1px solid #56AA7E
             border-radius: 3px
+            cursor: pointer
             padding: 13px 21px
+    .j-tab.active
+        background: #4c8567
+        background-color: rgb(76, 133, 103)
+        color: #fff
+        cursor: default
 
     &__update-time
+        margin-left: -280px
         font-size: 10px
         line-height: 12px
         color: #747474
 
-
- 
     &__main-box
         display: flex
-        align-items: flex-start
         flex-wrap: wrap
-       
+        
     &__slider
         max-width: 602px
         position: relative
@@ -49,21 +95,46 @@
             height: 390px
             padding-bottom: 6px
         &--mini
+            object-fit: cover
             max-width: 120px
             height: 120px
-            padding-right: 6px
-        
-        .slick-next.slick-arrow
-            position: absolute
-            z-index: 5
-            right: 0
-            bottom: -150
+            margin-right: 6px
+            filter: grayscale(100%)
+            filter: gray
+            &:hover 
+                filter: none
+                filter: none
 
-        .slick-prev.slick-arrow
+        .slick-next.slick-arrow,
+        .slick-prev.slick-arrow 
             position: absolute
             z-index: 5
+            width: 60px
+            height: 60px
+            border: 1px solid #56AA7E
+            background-repeat: no-repeat
+            // background-size: cover
+            background-position: center  
+            font-size: 0
             right: 0
-            bottom: 0
+            background-color: #56AA7E
+            
+        
+        .slick-prev.slick-arrow
+            bottom: -60px
+            &::before
+                content: ''
+                position: absolute
+                background-image: url("../img/arrow_prev.svg")
+                width: 24px
+                height: 6px
+                left: 16px
+
+        .slick-next.slick-arrow
+            bottom: -121px
+            background-color: #fff
+            background-image: url("../img/arrow_next.svg")
+
 
     .q-order-item__video
         display: none
@@ -74,40 +145,62 @@
         margin-bottom: 27px
 
     &__map
-        &--text
+        align-self: flex-start
+        padding-right: 38px
+
+        &--title
             display: block
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 13px;
+            font-weight: 600
+            font-size: 14px
+            line-height: 13px
+            color: #4E4E4E
             padding-bottom: 18px
 
     &__content-box
         width: calc( 100% - 602px )
         display: flex
+        align-items: center
         justify-content: space-between
         flex-wrap: wrap
+
     &__title
-        font-weight: bold
+        max-width: 601px
+        width: 100%
+        font-weight: 700
         font-size: 24px
         line-height: 29px
+        color: #313131
         padding-bottom: 35px
 
     &__info-box
+        position: relative
+        color: #4E4E4E
         padding-bottom: 30px
 
         &--subtitle
-            font-weight: bold
+            font-weight: 600
             font-size: 14px
             line-height: 13px
-            padding-bottom: 8px
+            color: #4E4E4E
         &--text
             font-size: 14px
             line-height: 150%
+            p
+                padding-top: 8px
         &--list
             font-size: 14px
             line-height: 197.5%
-            // padding-bottom: 45px
+            min-width: 250px
+            padding-bottom: 45px
+            margin: 0
+            dt
+                font-weight: 500
+                float: left
+                text-align: left
+                padding-right: 5px
+                       
     &__button
+        max-width: 200px
         font-size: 12px
         line-height: 15px
         background-color: #4C8567
@@ -115,9 +208,10 @@
         border-radius: 3px
         border: none
         padding: 11px 14px
-        // margin-top: 45px
+
 
     &__order-form
+        align-self: flex-start
         position: relative
         max-width: 346px
         width: 100%
@@ -127,30 +221,31 @@
         border: 1px solid #DCDCDC
         padding: 13px 20px
         
-
-        &--price
+    .q-order-form
+        &__header
             display: flex
             align-items: flex-end
+            flex-wrap: wrap
             justify-content: space-between
             width: 100%
             border-bottom: 1px solid #DCDCDC
             padding-bottom: 9px
             
-        &--payment-day
-            font-weight: bold
-            font-size: 24px
-            color: #4C8567
-        &--payment-hour
-            font-weight: bold
-            color: #777777
-        &--payment-day,
-        &--payment-hour
-            span 
-                font-size: 14px
-                font-weight: normal
-        &--form
+            &--payment-day
+                font-weight: 700
+                font-size: 24px
+                color: #4C8567
+            &--payment-hour
+                font-weight: 700
+                color: #777777
+            &--payment-day,
+            &--payment-hour
+                span 
+                    font-size: 14px
+                    font-weight: normal
+        &__form
             padding-bottom: 19px
-            span
+            &--title
                 display: block
                 font-size: 9px
                 line-height: 11px
@@ -165,12 +260,44 @@
                 background-color: #fafafa
                 border: 1px solid #dcdcdc
                 padding: 5px 17px
+                &:hover
+                    background-color: #D8FAE8
+
                     
-        &--btn
+        &__btn
             background-color: #F04141
             color: #fff
             border: none
             border-radius: 3px
             padding: 15px 40px
             margin-left: auto
+
+    &__link-block
+        width: calc( 100% - 602px )
+        padding-top: 30px
+
+        &--title
+            display: block
+            font-weight: 600
+            font-size: 20px
+            line-height: 19px
+            color: #313131
+            padding-bottom: 32px
+
+    &__link-box
+        display: flex
+        flex-wrap: wrap
+
+        &--link
+            font-size: 10px
+            line-height: 12px
+            color: #4E4E4E
+            border: 1px solid #979797
+            border-radius: 3px
+            padding: 9px 13px
+            margin-right: 12px
+            margin-bottom: 12px
+            &:hover
+                background: #4C8567
+                color: #ffffff
 

@@ -28,8 +28,17 @@ $(function () {
         return false;
       });
 
+      // $('#svg-star').on("click", function() {
+      //   if( $('#path').css('fill') == "none"){
+      //     $('#path').css({ fill: "rgb(255, 0, 0)" });
+      //   }else{
+      //     $('#path').css({ fill: "#ffffff" });
+      //   }    
+      // });
+
   });
 
+  
 
   // $(".header__select").select2();
 

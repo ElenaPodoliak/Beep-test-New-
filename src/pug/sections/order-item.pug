@@ -2,7 +2,18 @@
     .q-container
         .q-order-item__inner
             h1.q-order-item__main-title Автокран ЗИЛ-Т154, Одесса
-            //- include('../_breadcrumbs.html')
+            .q-breadcrumbs
+                .q-container
+                    .q-breadcrumbs__inner
+                        ul.q-breadcrumbs__list
+                            li.q-breadcrumbs__list--item
+                                a.q-breadcrumbs__list--link(href="#") Главная
+                            li.q-breadcrumbs__list--item
+                                a.q-breadcrumbs__list--link(href="#") Вся спецтехника
+                            li.q-breadcrumbs__list--item
+                                a.q-breadcrumbs__list--link(href="#") Автокраны
+                            li.q-breadcrumbs__list--item
+                                span.q-breadcrumbs__list--text Автокран ЗИЛ-Т154, Одесса
             .q-order-item__wrapper
                 .q-order-item__content
                     .q-order-item__header
@@ -12,11 +23,12 @@
                                 span.q-order-item__tabs--tab.j-tab(data-id="2") Видео
                         
                         span.q-order-item__update-time Обновлено 7 апреля 2020, 08:48.
-                        button.q-order-item__favourite
-                            <svg (width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg")>
-                                <path d="M7.05464 0.972639C7.24021 0.609015 7.75979 0.609014 7.94536 0.972641L9.37145 3.76707C9.5894 4.19415 9.99839 4.4913 10.4719 4.56661L13.5703 5.05938C13.9734 5.1235 14.134 5.61764 13.8455 5.9065L11.6285 8.12631C11.2897 8.46557 11.1335 8.94637 11.2082 9.42L11.697 12.519C11.7606 12.9222 11.3402 13.2276 10.9764 13.0425L8.18013 11.62C7.75277 11.4026 7.24723 11.4026 6.81987 11.62L4.02361 13.0425C3.65975 13.2276 3.23941 12.9222 3.30301 12.519L3.79181 9.41999C3.86651 8.94637 3.71029 8.46557 3.37146 8.12631L1.15449 5.90649C0.866005 5.61764 1.02656 5.1235 1.42974 5.05937L4.52808 4.56661C5.00161 4.4913 5.4106 4.19415 5.62855 3.76707L7.05464 0.972639Z" stroke="#4C8567"/>
-                            </svg>
-                            span.q-order-item__favourite--text В избранное
+                        .q-order-item__favourite
+                            button.q-order-item__favourite--btn
+                                <svg (id="svg-star" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg")>
+                                    <path d="M7.05464 0.972639C7.24021 0.609015 7.75979 0.609014 7.94536 0.972641L9.37145 3.76707C9.5894 4.19415 9.99839 4.4913 10.4719 4.56661L13.5703 5.05938C13.9734 5.1235 14.134 5.61764 13.8455 5.9065L11.6285 8.12631C11.2897 8.46557 11.1335 8.94637 11.2082 9.42L11.697 12.519C11.7606 12.9222 11.3402 13.2276 10.9764 13.0425L8.18013 11.62C7.75277 11.4026 7.24723 11.4026 6.81987 11.62L4.02361 13.0425C3.65975 13.2276 3.23941 12.9222 3.30301 12.519L3.79181 9.41999C3.86651 8.94637 3.71029 8.46557 3.37146 8.12631L1.15449 5.90649C0.866005 5.61764 1.02656 5.1235 1.42974 5.05937L4.52808 4.56661C5.00161 4.4913 5.4106 4.19415 5.62855 3.76707L7.05464 0.972639Z" stroke="#4C8567"/>
+                                </svg>
+                                span.q-order-item__favourite--text В избранное
                 
                     .q-order-item__main-box
                         .q-order-item__tabs.j-order-item__tabs
@@ -31,40 +43,60 @@
                                     img.q-order-item__slider--mini(src="img/slide_1.jpg")
                                     img.q-order-item__slider--mini(src="img/slide_1.jpg")
                                     img.q-order-item__slider--mini(src="img/slide_1.jpg")
-                            .q-order-item__video.q-order-item__tab-item#2
+                            .q-order-item__video.j-order-item__tab-item#2
 
                         .q-order-item__content-box
                             span.q-order-item__title Аренда автокрана LIEBHERR LTM 1100, Одесса, ул. Паустовского, 33.
                             .q-order-item__info-box
                                 .q-order-item__info-box--subtitle Описание
-                                p.q-order-item__info-box--text Автокран LIEBHERR LTM 1100. Надежная техника для решения Вашей задачи. Место базирования - поселок Котовского. Возможны различные формы договорных отношений и оплаты, плательщик НДС. Профессиональные операторы выполнят заказ любой сложности.
+                                .q-order-item__info-box--text
+                                    p Автокран LIEBHERR LTM 1100. Надежная техника для решения Вашей задачи. Место базирования - поселок Котовского. Возможны различные формы договорных отношений и оплаты, плательщик НДС. Профессиональные операторы выполнят заказ любой сложности.
                             .q-order-item__info-box
                                 .q-order-item__info-box--subtitle Характеристики
-                                ul.q-order-item__info-box--list
-                                    li Ширина  - 2750 мм
-                                    li Длина - 13400 мм
-                                    li Высота - 3995 мм
-                                    li Стрела - 52 метров
-                                    li Гусек - 10,8 метра + 19 метров
-                                    li Грузоподъемность - 100 тонн
-                                    li Вес - 60000 кг
+                                dl.q-order-item__info-box--list
+                                    dt Ширина - 
+                                    dd 2750 мм
+                                    dt Длина - 
+                                    dd 13400 мм
+                                    dt Высота - 
+                                    dd 3995 мм
+                                    dt Стрела - 
+                                    dd 52 метров
+                                    dt Гусек - 
+                                    dd 10,8 метра + 19 метров
+                                    dt Грузоподъемность - 
+                                    dd 100 тонн
+                                    dt Вес - 
+                                    dd 60000 кг
+
                                 button.q-order-item__button Поделиться
 
-                            .q-order-item__order-form
-                                .q-order-item__order-form--price
-                                    span.q-order-item__order-form--payment-day 6500
+                            form.q-order-item__order-form
+                                .q-order-form__header
+                                    span.q-order-form__header--payment-day 6500
                                         span грн. / смена
-                                    span.q-order-item__order-form--payment-hour 100
+                                    span.q-order-form__header--payment-hour 100
                                         span грн. / день
-                                .q-order-item__order-form--form
-                                    span Для заказа автокрана - заполните форму
-                                    input(type="text" placeholder="Имя")
-                                    input(type="text" placeholder="Ваш телефон")
-                                button.q-order-item__order-form--btn Заказать
+                                .q-order-form__form
+                                    span.q-order-form__form--title Для заказа автокрана - заполните форму
+                                    input.q-order-form__form--input(type="text" placeholder="Имя" required)
+                                    input.q-order-form__form--input(type="text" placeholder="Ваш телефон" required)
+                                button.q-order-form__btn Заказать
 
                         .q-order-item__map
-                            span.q-order-item__map--text Карта базирования
+                            span.q-order-item__map--title Карта базирования
                             img.q-order-item__map--img(src="img/map.jpg" alt="map")
+                        
+                        .q-order-item__link-block
+                            span.q-order-item__link-block--title Похожие запросы
+                            .q-order-item__link-box
+                                a.q-order-item__link-box--link(href="#") погрузочно-разгрузочные работы
+                                a.q-order-item__link-box--link(href="#") строительно-монтажные работы
+                                a.q-order-item__link-box--link(href="#") установка ветрогенератора
+                                a.q-order-item__link-box--link(href="#") установка металлоконструкций
+                                a.q-order-item__link-box--link(href="#") укладка перекрытий
+                                a.q-order-item__link-box--link(href="#") монтаж рекламных конструкций
+                                a.q-order-item__link-box--link(href="#") монтаж ЛЕП
                                
 
                             

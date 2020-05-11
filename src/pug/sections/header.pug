@@ -8,24 +8,19 @@ header.q-header(style="background-image: url(img/header_bg.jpg);")
                   
                 nav.q-header__nav
                     ul.q-header__menu
-                        li.q-header__menu--list.q-menu--all
+                        li.q-header__menu--item.q-menu--all
                             a(href="#").q-header__menu--link Вся спецтехника
-                       
-                        li.q-header__menu--list.q-header__menu--order
+                        li.q-header__menu--item.q-header__menu--order
                             a.q-header__menu--link(href="#") Заказать технику
-                        li.q-header__menu--list.q-header__menu--phone
-                            img(src="img/icon_phone.svg" alt="")
+                        li.q-header__menu--item.q-header__menu--phone
                             a.q-header__menu--link(href="tel: 88004381715") 8 800 
                                 span 438 17 15
                         li.q-header__menu--item.q-header__menu--search
-                            a(href="#")
-                                img(src="img/icon_search.svg" alt="")
+                            a.q-header__menu--link(href="#")
                         li.q-header__menu--item.q-header__menu--language
                             select.q-header__menu--language(name="select" id="")
                                 option(selected) ru
                                 option ua
                                 option en
                         li.q-header__menu--item.q-header__menu--btn
-                            a(href="#") 
-                                img(src="img/icon_user.svg" alt="") 
-                                |войти
+                            a(href="#") войти      

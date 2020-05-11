@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&amp;display=swap&amp;subset=cyrillic"/>
     <link rel="stylesheet" href="css/libs.min.css"/>
     <link rel="stylesheet" href="css/style.min.css"/>
     <title>Beep-Test</title>
@@ -18,10 +19,10 @@
             <div class="q-header__logo"><a class="q-header__logo--link" href="#"><img class="q-header__logo--img" src="img/logo.png" alt="logo-beep"/></a></div>
             <nav class="q-header__nav">
               <ul class="q-header__menu">
-                <li class="q-header__menu--list q-menu--all"><a class="q-header__menu--link" href="#">Вся спецтехника</a></li>
-                <li class="q-header__menu--list q-header__menu--order"><a class="q-header__menu--link" href="#">Заказать технику</a></li>
-                <li class="q-header__menu--list q-header__menu--phone"><img src="img/icon_phone.svg" alt=""/><a class="q-header__menu--link" href="tel: 88004381715">8 800 <span>438 17 15</span></a></li>
-                <li class="q-header__menu--item q-header__menu--search"><a href="#"><img src="img/icon_search.svg" alt=""/></a></li>
+                <li class="q-header__menu--item q-menu--all"><a class="q-header__menu--link" href="#">Вся спецтехника</a></li>
+                <li class="q-header__menu--item q-header__menu--order"><a class="q-header__menu--link" href="#">Заказать технику</a></li>
+                <li class="q-header__menu--item q-header__menu--phone"><a class="q-header__menu--link" href="tel: 88004381715">8 800 <span>438 17 15</span></a></li>
+                <li class="q-header__menu--item q-header__menu--search"><a class="q-header__menu--link" href="#"></a></li>
                 <li class="q-header__menu--item q-header__menu--language">
                   <select class="q-header__menu--language" name="select" id="">
                     <option selected="selected">ru</option>
@@ -29,72 +30,258 @@
                     <option>en</option>
                   </select>
                 </li>
-                <li class="q-header__menu--item q-header__menu--btn"><a href="#"> <img src="img/icon_user.svg" alt=""/>войти</a></li>
+                <li class="q-header__menu--item q-header__menu--btn"><a href="#">войти      </a></li>
               </ul>
             </nav>
           </div>
         </div>
       </div>
     </header>
-    <main></main>
-    <div class="q-order-item">
-      <div class="q-container">
-        <div class="q-order-item__inner">
-          <h1 class="q-order-item__main-title">Автокран ЗИЛ-Т154, Одесса</h1>
-          <div class="q-order-item__wrapper">
-            <div class="q-order-item__content">
-              <div class="q-order-item__header">
-                <div class="q-order-item__tabs j-order-item__tabs">
-                  <div class="j-order-item__tab-items"><span class="q-order-item__tabs--tab j-tab" data-id="1">Фото</span><span class="q-order-item__tabs--tab j-tab" data-id="2">Видео</span></div>
-                </div><span class="q-order-item__update-time">Обновлено 7 апреля 2020, 08:48.</span>
-                <button class="q-order-item__favourite"><svg (width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg")>
+    <main>
+      <div class="q-order-item">
+        <div class="q-container">
+          <div class="q-order-item__inner">
+            <h1 class="q-order-item__main-title">Автокран ЗИЛ-Т154, Одесса</h1>
+            <div class="q-breadcrumbs">
+              <div class="q-container">
+                <div class="q-breadcrumbs__inner">
+                  <ul class="q-breadcrumbs__list">
+                    <li class="q-breadcrumbs__list--item"><a class="q-breadcrumbs__list--link" href="#">Главная</a></li>
+                    <li class="q-breadcrumbs__list--item"><a class="q-breadcrumbs__list--link" href="#">Вся спецтехника</a></li>
+                    <li class="q-breadcrumbs__list--item"><a class="q-breadcrumbs__list--link" href="#">Автокраны</a></li>
+                    <li class="q-breadcrumbs__list--item"><span class="q-breadcrumbs__list--text">Автокран ЗИЛ-Т154, Одесса</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="q-order-item__wrapper">
+              <div class="q-order-item__content">
+                <div class="q-order-item__header">
+                  <div class="q-order-item__tabs j-order-item__tabs">
+                    <div class="j-order-item__tab-items"><span class="q-order-item__tabs--tab j-tab" data-id="1">Фото</span><span class="q-order-item__tabs--tab j-tab" data-id="2">Видео</span></div>
+                  </div><span class="q-order-item__update-time">Обновлено 7 апреля 2020, 08:48.</span>
+                  <div class="q-order-item__favourite">
+                    <button class="q-order-item__favourite--btn"><svg (id="svg-star" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg")>
 <path d="M7.05464 0.972639C7.24021 0.609015 7.75979 0.609014 7.94536 0.972641L9.37145 3.76707C9.5894 4.19415 9.99839 4.4913 10.4719 4.56661L13.5703 5.05938C13.9734 5.1235 14.134 5.61764 13.8455 5.9065L11.6285 8.12631C11.2897 8.46557 11.1335 8.94637 11.2082 9.42L11.697 12.519C11.7606 12.9222 11.3402 13.2276 10.9764 13.0425L8.18013 11.62C7.75277 11.4026 7.24723 11.4026 6.81987 11.62L4.02361 13.0425C3.65975 13.2276 3.23941 12.9222 3.30301 12.519L3.79181 9.41999C3.86651 8.94637 3.71029 8.46557 3.37146 8.12631L1.15449 5.90649C0.866005 5.61764 1.02656 5.1235 1.42974 5.05937L4.52808 4.56661C5.00161 4.4913 5.4106 4.19415 5.62855 3.76707L7.05464 0.972639Z" stroke="#4C8567"/>
 </svg><span class="q-order-item__favourite--text">В избранное</span>
-                </button>
-              </div>
-              <div class="q-order-item__main-box">
-                <div class="q-order-item__tabs j-order-item__tabs">
-                  <div class="q-order-item__slider j-order-item__tab-item" id="1">
-                    <div class="q-order-item__slider--inner j-order-item__slider--inner"><img class="q-order-item__slider--item" src="img/slide_1.jpg"/><img class="q-order-item__slider--item" src="img/slide_1.jpg"/><img class="q-order-item__slider--item" src="img/slide_1.jpg"/><img class="q-order-item__slider--item" src="img/slide_1.jpg"/></div>
-                    <div class="q-order-item__slider--nav j-order-item__slider--nav"><img class="q-order-item__slider--mini" src="img/slide_1.jpg"/><img class="q-order-item__slider--mini" src="img/slide_1.jpg"/><img class="q-order-item__slider--mini" src="img/slide_1.jpg"/><img class="q-order-item__slider--mini" src="img/slide_1.jpg"/></div>
+                    </button>
                   </div>
-                  <div class="q-order-item__video q-order-item__tab-item" id="2"></div>
                 </div>
-                <div class="q-order-item__content-box"><span class="q-order-item__title">Аренда автокрана LIEBHERR LTM 1100, Одесса, ул. Паустовского, 33.</span>
-                  <div class="q-order-item__info-box">
-                    <div class="q-order-item__info-box--subtitle">Описание</div>
-                    <p class="q-order-item__info-box--text">Автокран LIEBHERR LTM 1100. Надежная техника для решения Вашей задачи. Место базирования - поселок Котовского. Возможны различные формы договорных отношений и оплаты, плательщик НДС. Профессиональные операторы выполнят заказ любой сложности.</p>
-                  </div>
-                  <div class="q-order-item__info-box">
-                    <div class="q-order-item__info-box--subtitle">Характеристики</div>
-                    <ul class="q-order-item__info-box--list">
-                      <li>Ширина  - 2750 мм</li>
-                      <li>Длина - 13400 мм</li>
-                      <li>Высота - 3995 мм</li>
-                      <li>Стрела - 52 метров</li>
-                      <li>Гусек - 10,8 метра + 19 метров</li>
-                      <li>Грузоподъемность - 100 тонн</li>
-                      <li>Вес - 60000 кг</li>
-                    </ul>
-                    <button class="q-order-item__button">Поделиться</button>
-                  </div>
-                  <div class="q-order-item__order-form">
-                    <div class="q-order-item__order-form--price"><span class="q-order-item__order-form--payment-day">6500<span>грн. / смена</span></span><span class="q-order-item__order-form--payment-hour">100<span>грн. / день</span></span></div>
-                    <div class="q-order-item__order-form--form"><span>Для заказа автокрана - заполните форму</span>
-                      <input type="text" placeholder="Имя"/>
-                      <input type="text" placeholder="Ваш телефон"/>
+                <div class="q-order-item__main-box">
+                  <div class="q-order-item__tabs j-order-item__tabs">
+                    <div class="q-order-item__slider j-order-item__tab-item" id="1">
+                      <div class="q-order-item__slider--inner j-order-item__slider--inner"><img class="q-order-item__slider--item" src="img/slide_1.jpg"/><img class="q-order-item__slider--item" src="img/slide_1.jpg"/><img class="q-order-item__slider--item" src="img/slide_1.jpg"/><img class="q-order-item__slider--item" src="img/slide_1.jpg"/></div>
+                      <div class="q-order-item__slider--nav j-order-item__slider--nav"><img class="q-order-item__slider--mini" src="img/slide_1.jpg"/><img class="q-order-item__slider--mini" src="img/slide_1.jpg"/><img class="q-order-item__slider--mini" src="img/slide_1.jpg"/><img class="q-order-item__slider--mini" src="img/slide_1.jpg"/></div>
                     </div>
-                    <button class="q-order-item__order-form--btn">Заказать</button>
+                    <div class="q-order-item__video j-order-item__tab-item" id="2"></div>
+                  </div>
+                  <div class="q-order-item__content-box"><span class="q-order-item__title">Аренда автокрана LIEBHERR LTM 1100, Одесса, ул. Паустовского, 33.</span>
+                    <div class="q-order-item__info-box">
+                      <div class="q-order-item__info-box--subtitle">Описание</div>
+                      <div class="q-order-item__info-box--text">
+                        <p>Автокран LIEBHERR LTM 1100. Надежная техника для решения Вашей задачи. Место базирования - поселок Котовского. Возможны различные формы договорных отношений и оплаты, плательщик НДС. Профессиональные операторы выполнят заказ любой сложности.</p>
+                      </div>
+                    </div>
+                    <div class="q-order-item__info-box">
+                      <div class="q-order-item__info-box--subtitle">Характеристики</div>
+                      <dl class="q-order-item__info-box--list">
+                        <dt>Ширина - </dt>
+                        <dd>2750 мм</dd>
+                        <dt>Длина - </dt>
+                        <dd>13400 мм</dd>
+                        <dt>Высота - </dt>
+                        <dd>3995 мм</dd>
+                        <dt>Стрела - </dt>
+                        <dd>52 метров</dd>
+                        <dt>Гусек - </dt>
+                        <dd>10,8 метра + 19 метров</dd>
+                        <dt>Грузоподъемность - </dt>
+                        <dd>100 тонн</dd>
+                        <dt>Вес - </dt>
+                        <dd>60000 кг</dd>
+                      </dl>
+                      <button class="q-order-item__button">Поделиться</button>
+                    </div>
+                    <form class="q-order-item__order-form">
+                      <div class="q-order-form__header"><span class="q-order-form__header--payment-day">6500<span>грн. / смена</span></span><span class="q-order-form__header--payment-hour">100<span>грн. / день</span></span></div>
+                      <div class="q-order-form__form"><span class="q-order-form__form--title">Для заказа автокрана - заполните форму</span>
+                        <input class="q-order-form__form--input" type="text" placeholder="Имя" required="required"/>
+                        <input class="q-order-form__form--input" type="text" placeholder="Ваш телефон" required="required"/>
+                      </div>
+                      <button class="q-order-form__btn">Заказать</button>
+                    </form>
+                  </div>
+                  <div class="q-order-item__map"><span class="q-order-item__map--title">Карта базирования</span><img class="q-order-item__map--img" src="img/map.jpg" alt="map"/></div>
+                  <div class="q-order-item__link-block"><span class="q-order-item__link-block--title">Похожие запросы</span>
+                    <div class="q-order-item__link-box"><a class="q-order-item__link-box--link" href="#">погрузочно-разгрузочные работы</a><a class="q-order-item__link-box--link" href="#">строительно-монтажные работы</a><a class="q-order-item__link-box--link" href="#">установка ветрогенератора</a><a class="q-order-item__link-box--link" href="#">установка металлоконструкций</a><a class="q-order-item__link-box--link" href="#">укладка перекрытий</a><a class="q-order-item__link-box--link" href="#">монтаж рекламных конструкций</a><a class="q-order-item__link-box--link" href="#">монтаж ЛЕП</a></div>
                   </div>
                 </div>
-                <div class="q-order-item__map"><span class="q-order-item__map--text">Карта базирования</span><img class="q-order-item__map--img" src="img/map.jpg" alt="map"/></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <footer></footer>
+      <section class="q-similar">
+        <div class="q-container">
+          <div class="q-similar__title">Похожая техника в Одессе</div>
+        </div>
+        <div class="q-similar__wrapper">
+          <div class="q-container">
+            <table class="q-similar__table">
+              <tr class="q-similar__table--row">
+                <th class="q-similar__table--col">фото</th>
+                <th class="q-similar__table--col">название</th>
+                <th class="q-similar__table--col">характеристики</th>
+                <th class="q-similar__table--col">стоимость заказа</th>
+              </tr>
+              <tr class="q-similar__table--row">
+                <td class="q-similar__table--col"> <img class="q-similar__table--img" src="img/table_img.jpg" alt="table_img"/></td>
+                <td class="q-similar__table--col"> 
+                  <p>Автокран LIEBHERR LTM 1100</p>
+                </td>
+                <td class="q-similar__table--col"> 
+                  <ul class="q-similar__list">
+                    <li class="q-similar__list--item">Грузоподъемность - 100 тонн</li>
+                    <li class="q-similar__list--item">Вылет стрелы - 25 метров</li>
+                    <li class="q-similar__list--item">Тип проходимости - колесный</li>
+                    <li class="q-similar__list--item">Длина гуська - 3 метра</li>
+                  </ul>
+                </td>
+                <td class="q-similar__table--col"> <span>8000 грн / смена</span></td>
+              </tr>
+              <tr class="q-similar__table--row">
+                <td class="q-similar__table--col"> <img class="q-similar__table--img" src="img/table_img.jpg" alt="table_img"/></td>
+                <td class="q-similar__table--col"> 
+                  <p>Автокран LIEBHERR LTM 1100</p>
+                </td>
+                <td class="q-similar__table--col"> 
+                  <ul class="q-similar__list">
+                    <li class="q-similar__list--item">Грузоподъемность - 100 тонн</li>
+                    <li class="q-similar__list--item">Вылет стрелы - 25 метров</li>
+                    <li class="q-similar__list--item">Тип проходимости - колесный</li>
+                    <li class="q-similar__list--item">Длина гуська - 3 метра</li>
+                  </ul>
+                </td>
+                <td class="q-similar__table--col"> <span>8000 грн / смена</span></td>
+              </tr>
+              <tr class="q-similar__table--row">
+                <td class="q-similar__table--col"> <img class="q-similar__table--img" src="img/table_img.jpg" alt="table_img"/></td>
+                <td class="q-similar__table--col"> 
+                  <p>Автокран LIEBHERR LTM 1100</p>
+                </td>
+                <td class="q-similar__table--col"> 
+                  <ul class="q-similar__list">
+                    <li class="q-similar__list--item">Грузоподъемность - 100 тонн</li>
+                    <li class="q-similar__list--item">Вылет стрелы - 25 метров</li>
+                    <li class="q-similar__list--item">Тип проходимости - колесный</li>
+                    <li class="q-similar__list--item">Длина гуська - 3 метра</li>
+                  </ul>
+                </td>
+                <td class="q-similar__table--col"> <span>8000 грн / смена</span></td>
+              </tr>
+              <tr class="q-similar__table--row">
+                <td class="q-similar__table--col"> <img class="q-similar__table--img" src="img/table_img.jpg" alt="table_img"/></td>
+                <td class="q-similar__table--col"> 
+                  <p>Автокран LIEBHERR LTM 1100</p>
+                </td>
+                <td class="q-similar__table--col"> 
+                  <ul class="q-similar__list">
+                    <li class="q-similar__list--item">Грузоподъемность - 100 тонн</li>
+                    <li class="q-similar__list--item">Вылет стрелы - 25 метров</li>
+                    <li class="q-similar__list--item">Тип проходимости - колесный</li>
+                    <li class="q-similar__list--item">Длина гуська - 3 метра</li>
+                  </ul>
+                </td>
+                <td class="q-similar__table--col"> <span>8000 грн / смена</span></td>
+              </tr>
+              <tr class="q-similar__table--row">
+                <td class="q-similar__table--col"> <img class="q-similar__table--img" src="img/table_img.jpg" alt="table_img"/></td>
+                <td class="q-similar__table--col"> 
+                  <p>Автокран LIEBHERR LTM 1100</p>
+                </td>
+                <td class="q-similar__table--col"> 
+                  <ul class="q-similar__list">
+                    <li class="q-similar__list--item">Грузоподъемность - 100 тонн</li>
+                    <li class="q-similar__list--item">Вылет стрелы - 25 метров</li>
+                    <li class="q-similar__list--item">Тип проходимости - колесный</li>
+                    <li class="q-similar__list--item">Длина гуська - 3 метра</li>
+                  </ul>
+                </td>
+                <td class="q-similar__table--col"> <span>8000 грн / смена</span></td>
+              </tr>
+              <tr class="q-similar__table--row">
+                <td class="q-similar__table--col"> <img class="q-similar__table--img" src="img/table_img.jpg" alt="table_img"/></td>
+                <td class="q-similar__table--col"> 
+                  <p>Автокран LIEBHERR LTM 1100</p>
+                </td>
+                <td class="q-similar__table--col"> 
+                  <ul class="q-similar__list">
+                    <li class="q-similar__list--item">Грузоподъемность - 100 тонн</li>
+                    <li class="q-similar__list--item">Вылет стрелы - 25 метров</li>
+                    <li class="q-similar__list--item">Тип проходимости - колесный</li>
+                    <li class="q-similar__list--item">Длина гуська - 3 метра</li>
+                  </ul>
+                </td>
+                <td class="q-similar__table--col"> <span>8000 грн / смена</span></td>
+              </tr>
+              <tr class="q-similar__table--row">
+                <td class="q-similar__table--col"> <img class="q-similar__table--img" src="img/table_img.jpg" alt="table_img"/></td>
+                <td class="q-similar__table--col"> 
+                  <p>Автокран LIEBHERR LTM 1100</p>
+                </td>
+                <td class="q-similar__table--col"> 
+                  <ul class="q-similar__list">
+                    <li class="q-similar__list--item">Грузоподъемность - 100 тонн</li>
+                    <li class="q-similar__list--item">Вылет стрелы - 25 метров</li>
+                    <li class="q-similar__list--item">Тип проходимости - колесный</li>
+                    <li class="q-similar__list--item">Длина гуська - 3 метра</li>
+                  </ul>
+                </td>
+                <td class="q-similar__table--col"> <span>8000 грн / смена</span></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="q-footer">
+      <div class="q-container">
+        <nav class="q-footer__nav">
+          <div class="q-footer__box">
+            <ul class="q-footer__list">
+              <li class="q-footer__list--item"><a class="q-footer__list--link" href="#">О сервисе</a></li>
+              <li class="q-footer__list--item"><a class="q-footer__list--link" href="#">Контакты</a></li>
+              <li class="q-footer__list--item"><a class="q-footer__list--link" href="#">Политика конфиденциальности</a></li>
+              <li class="q-footer__list--item"><a class="q-footer__list--link" href="#">Публичная оферта</a></li>
+              <li class="q-footer__list--item"><a class="q-footer__list--link" href="#">Карта сайта</a></li>
+            </ul>
+            <div class="q-footer__sources">
+              <div class="q-footer__sources--title">Мобильные приложения</div><a class="q-footer__sources--link" href="#"><img class="q-footer__sources--img" src="img/google_play.png" alt="Google_Play"/></a><a class="q-footer__sources--link" href="#">  <img class="q-footer__sources--img" src="img/app_store.png" alt="AppStore"/></a>
+            </div>
+          </div>
+          <table class="q-footer__table">
+            <tr class="q-footer__table-menu">
+              <td class="q-footer__table-menu--col q-footer__table-menu--logo"><a class="q-footer__table-menu--link" href="#"><svg width="132" height="29" viewBox="0 0 132 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M131.163 3.76844C130.744 3.7161 130.325 3.7161 129.854 3.7161C126.714 3.7161 123.678 4.39651 120.957 5.705C124.306 5.96669 127.394 7.06582 130.011 8.84536L128.598 14.7597C128.075 14.655 127.499 14.6027 126.923 14.6027C124.463 14.6027 122.213 15.5971 120.59 17.2197C120.486 17.3243 120.329 17.4814 120.224 17.586L119.282 13.4512C121.218 11.9857 123.626 11.0436 126.191 10.8866C124.202 9.94449 122.003 9.36876 119.648 9.36876C119.229 9.36876 118.811 9.36876 118.392 9.42109L117.083 3.61142C120.8 1.30849 125.196 0 129.854 0C130.587 0 131.32 0 132 0.104679L131.163 3.76844Z" fill="#64A482"/>
+<path d="M124.097 25.0704C124.516 25.0704 124.882 24.861 125.144 24.5993C125.405 24.3376 125.562 23.9713 125.562 23.5526C125.562 23.1862 125.405 22.7675 125.144 22.5058C124.882 22.2441 124.516 22.087 124.097 22.087C123.678 22.087 123.312 22.2441 123.05 22.5058C122.788 22.7675 122.631 23.1862 122.631 23.5526C122.631 23.9713 122.788 24.3376 123.05 24.5993C123.312 24.861 123.678 25.0704 124.097 25.0704ZM127.342 26.7976C126.505 27.635 125.353 28.1584 124.097 28.1584C122.841 28.1584 121.689 27.635 120.852 26.7976C120.014 25.9602 119.543 24.8087 119.543 23.5526C119.543 22.2964 120.014 21.1449 120.852 20.3598C121.689 19.5224 122.841 18.999 124.097 18.999C125.353 18.999 126.505 19.5224 127.342 20.3598C128.179 21.1449 128.65 22.2964 128.65 23.5526C128.65 24.8087 128.179 25.9602 127.342 26.7976Z" fill="#64A482"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M31.8747 6.28076C34.4917 6.28076 36.8993 7.37989 38.6265 9.10709C40.6154 11.096 41.6622 13.87 41.4005 16.644C41.4005 16.958 41.3481 17.2197 41.2958 17.5337H31.6653V14.184H37.8937C37.5797 13.1372 37.004 12.1951 36.2712 11.4624C35.1721 10.3109 33.6019 9.63048 31.8747 9.63048C30.1475 9.63048 28.5773 10.3632 27.4258 11.4624C26.3267 12.6138 25.594 14.184 25.594 15.9112C25.594 17.6384 26.2744 19.1563 27.4258 20.3077C28.5773 21.4592 30.0952 22.1396 31.8224 22.1396H31.9794V25.4893H31.8224C29.2054 25.4893 26.7978 24.3902 25.0706 22.663C23.3434 20.9358 22.2966 18.5282 22.2966 15.9112C22.2966 13.2419 23.3434 10.8343 25.0706 9.10709C26.7978 7.37989 29.2054 6.28076 31.8747 6.28076ZM0 6.3331H3.29738C3.29738 9.52581 3.29738 12.7185 3.34972 15.9636C3.34972 17.6908 4.03013 19.2086 5.1816 20.3601C6.28073 21.5115 7.85091 22.1919 9.57811 22.1919C11.3053 22.1919 12.8755 21.5115 13.9746 20.3601C14.7597 19.6273 15.3354 18.6852 15.5971 17.6384H9.36875V14.2887H19.0515C19.1039 14.8644 19.1562 15.3878 19.1562 15.9112C19.1562 18.4758 18.1618 20.8835 16.3299 22.7153C14.6027 24.4425 12.2474 25.4893 9.57811 25.4893C6.96114 25.4893 4.55353 24.4425 2.82633 22.7153C1.09913 20.9881 0 18.5805 0 15.9636C0 12.7708 0 9.52581 0 6.3331ZM89.5527 25.3323C89.5527 22.1919 89.5527 18.9992 89.5527 15.8589C89.5527 13.2419 90.5995 10.8343 92.3791 9.10709C94.1063 7.37989 96.4615 6.28076 99.1308 6.28076C101.8 6.28076 104.155 7.37989 105.883 9.10709C107.662 10.8343 108.604 13.1372 108.709 15.5448C108.709 16.1729 108.709 16.7486 108.604 17.3767V17.5337H98.9215V14.184H105.15C104.836 13.1372 104.312 12.1951 103.527 11.4624C102.428 10.3109 100.858 9.63048 99.1308 9.63048C97.4036 9.63048 95.8335 10.3109 94.7343 11.4624C93.5829 12.6138 92.9025 14.1317 92.8501 15.8589C92.8501 19.1039 92.8501 22.2966 92.8501 25.4893H89.5527V25.3323ZM86.1507 16.644C86.1507 16.9057 86.1507 17.115 86.0983 17.3767L86.046 17.5337H76.4155V14.184H82.6439C82.3299 13.1372 81.8065 12.1951 81.0214 11.4624C79.9223 10.3109 78.3521 9.63048 76.6249 9.63048C74.8977 9.63048 73.3275 10.3632 72.176 11.4624C71.0769 12.6138 70.3442 14.184 70.3442 15.9112C70.3442 17.6384 71.0769 19.1563 72.176 20.3077C73.3275 21.4592 74.8454 22.1396 76.5726 22.1396H76.7296V25.4893H76.5726C73.9556 25.4893 71.548 24.3902 69.8208 22.663C68.0936 20.9358 67.0468 18.5282 67.0468 15.9112C67.0468 13.2419 68.0936 10.8343 69.8208 9.10709C71.548 7.37989 73.9556 6.28076 76.6249 6.28076C79.2419 6.28076 81.6495 7.37989 83.3767 9.10709C84.7375 10.4679 85.6796 12.2475 86.046 14.184V14.2887C86.203 15.0738 86.2553 15.8589 86.1507 16.644ZM63.6447 15.1261C63.6971 15.5972 63.6971 16.1206 63.6447 16.644C63.6447 16.9057 63.5924 17.115 63.5924 17.3767L63.54 17.5337H53.9096V14.184H60.138C59.8239 13.1372 59.2482 12.1951 58.5155 11.4624C57.364 10.3109 55.8461 9.63048 54.1189 9.63048C52.3917 9.63048 50.8216 10.3632 49.6701 11.4624C48.5186 12.6138 47.8382 14.184 47.8382 15.9112C47.8382 17.6384 48.5186 19.1563 49.6701 20.3077C50.7692 21.4592 52.3394 22.1396 54.0666 22.1396H54.2236V25.4893H54.0666C51.4496 25.4893 49.042 24.3902 47.3148 22.663C45.5876 20.9358 44.4885 18.5282 44.4885 15.9112C44.4885 13.2419 45.5876 10.8343 47.3148 9.10709C49.042 7.37989 51.4496 6.28076 54.1189 6.28076C56.7359 6.28076 59.1435 7.37989 60.8707 9.10709C62.2316 10.4679 63.1737 12.2475 63.54 14.184V14.2887C63.5924 14.5504 63.6447 14.8121 63.6447 15.1261Z" fill="#64A482"/>
+</svg></a></td>
+              <td class="q-footer__table-menu--col q-footer__table-menu--adress">
+                <p>© 2020 beeep.com.ua   </p>
+              </td>
+              <td class="q-footer__table-menu--col q-footer__table-menu--facebook"><a class="q-footer__table-menu--link" href="#"><svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.32058 7.73542V5.70129C7.32058 5.39593 7.33463 5.15941 7.36318 4.99233C7.39163 4.82499 7.45635 4.66042 7.5568 4.49795C7.6571 4.33559 7.81951 4.2235 8.0438 4.16138C8.26838 4.09917 8.56682 4.06816 8.93941 4.06816H10.9734V0H7.72167C5.84013 0 4.48877 0.446404 3.66741 1.33921C2.84616 2.23222 2.43558 3.5476 2.43558 5.28585V7.73537H0V11.8038H2.43543V23.6077H7.32053V11.8039H10.5721L11.0019 7.73542H7.32058Z" fill="#75B995"/>
+</svg></a></td>
+              <td class="q-footer__table-menu--col q-footer__table-menu--youtube"><a class="q-footer__table-menu--link" href="#"><svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24.986 7.02735C24.9769 6.52117 24.9371 5.88115 24.8676 5.10791C24.7977 4.33422 24.6976 3.64279 24.5676 3.03356C24.4187 2.34927 24.0955 1.77265 23.598 1.3039C23.1005 0.835047 22.5215 0.563261 21.8609 0.488149C19.7961 0.253944 16.6758 0.136719 12.5 0.136719C8.3241 0.136719 5.20375 0.253944 3.13901 0.488149C2.47857 0.563212 1.90183 0.835047 1.40904 1.3039C0.91605 1.77251 0.595161 2.34913 0.446322 3.03356C0.306962 3.64299 0.202198 4.33437 0.13247 5.10791C0.0628389 5.88115 0.0232592 6.52092 0.0140239 7.02735C0.0045932 7.53359 0 8.23664 0 9.13672C0 10.0367 0.0045932 10.7399 0.0140728 11.2461C0.023308 11.7526 0.0628877 12.3923 0.132519 13.1655C0.202247 13.9391 0.302272 14.6305 0.432494 15.2399C0.581333 15.9244 0.904469 16.5009 1.40205 16.9694C1.89973 17.4382 2.47881 17.71 3.13906 17.7851C5.2038 18.0195 8.32395 18.1367 12.5 18.1367C16.6762 18.1367 19.7961 18.0195 21.861 17.7851C22.5215 17.7101 23.098 17.4382 23.591 16.9694C24.084 16.5008 24.4047 15.924 24.5535 15.2399C24.693 14.6305 24.7977 13.9391 24.8676 13.1655C24.9371 12.3923 24.9766 11.7523 24.986 11.2461C24.9953 10.7399 25 10.0367 25 9.13672C25 8.23664 24.9954 7.53359 24.986 7.02735ZM17.4387 9.89612L10.2959 14.396C10.1656 14.4897 10.0074 14.5365 9.82143 14.5365C9.68202 14.5365 9.53788 14.4989 9.38908 14.4239C9.08222 14.2554 8.92884 13.9928 8.92884 13.6366V4.63689C8.92884 4.28083 9.08227 4.01821 9.38908 3.84951C9.70538 3.68052 10.0076 3.68998 10.2959 3.87764L17.4387 8.37751C17.7176 8.5366 17.8571 8.78987 17.8571 9.13677C17.8571 9.48352 17.7176 9.73688 17.4387 9.89612Z" fill="#75B995"/>
+</svg></a></td>
+              <td class="q-footer__table-menu--col q-footer__table-menu--back"><a class="q-footer__table-menu--link" href="#">
+                  Вернуться в начало<svg width="16" height="37" viewBox="0 0 16 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.70711 0.292892C8.31658 -0.0976296 7.68342 -0.0976295 7.29289 0.292892L0.928931 6.65685C0.538406 7.04738 0.538407 7.68054 0.928931 8.07107C1.31946 8.46159 1.95262 8.46159 2.34314 8.07107L8 2.41422L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292892ZM9 37L9 1L7 1L7 37L9 37Z" fill="white"/>
+</svg></a></td>
+            </tr>
+          </table>
+        </nav>
+      </div>
+    </footer>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
